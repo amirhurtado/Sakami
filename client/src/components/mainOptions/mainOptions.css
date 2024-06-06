@@ -1,0 +1,22 @@
+.mainOptions{
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.mainOptions .iconOpt{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.mainOptions .icon{
+    color: var(--blanco);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.mainOptions .text{
+    color: var(--blanco);
+    font-size: 1.3rem;
+}

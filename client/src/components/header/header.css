@@ -1,0 +1,49 @@
+.header{
+    background-color: var(--verde);
+    padding: .5rem 2rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem
+}
+
+.header .logoImg{
+    width: 11rem;
+}
+
+.header .titleUbi{
+    color: var(--blanco);
+    padding-left: 1.5rem;
+    font-size: 1.9rem;
+    border-left: 0.1rem solid var(--blanco);
+}
+
+
+.header .otherOpc{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.header .otherOpc .text{
+    color: var(--blanco);
+    font-size: 1.3rem;
+}
+
+.header .otherOpc .icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.header .otherOpc .icon{
+    color: var(--blanco);
+    width: 2.3rem;
+    height: 2.3rem;
+}
