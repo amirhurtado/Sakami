@@ -1,22 +1,60 @@
-.mainOptions{
+.mainOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+}
+
+.mainOptions .iconOpt {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.mainOptions .menu {
+  display: none;
+}
+
+.mainOptions .icon {
+  color: var(--gris);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.mainOptions .text {
+  color: var(--blanco);
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainOptions {
+    background-color: var(--negro);
+    justify-content: space-around;
+    padding: 1.5rem 2rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mainOptions .iconOpt {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .mainOptions .menu {
     display: flex;
-    align-items: center;
-    gap: 2.6rem;
-}
+  }
 
-.mainOptions .iconOpt{
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-}
+  .mainOptions .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
 
-.mainOptions .icon{
-    color: var(--blanco);
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.mainOptions .text{
-    color: var(--blanco);
-    font-size: 1.3rem;
+  .mainOptions .text {
+    color: var(--gris);
+    font-size: 1.1rem;
+  }
 }

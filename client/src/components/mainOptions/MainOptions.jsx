@@ -1,29 +1,30 @@
 import './mainOptions.css';
 
-import { BsCreditCard } from "react-icons/bs";
-import { IoCalendarNumberOutline } from "react-icons/io5";
-import { RiEBike2Line } from "react-icons/ri";
-import { FiPhone } from "react-icons/fi";
 
+import { CiCreditCard2, CiCalendarDate, CiPhone, CiMenuBurger, CiMap } from "react-icons/ci";
 
 export const MainOptions = () => {
     return (
         <div className="mainOptions">
             <div className="iconOpt">
-                <BsCreditCard className="icon" />
+                <CiCreditCard2 className="icon" />
                 <h3 className="text">Bonos</h3>
             </div>
             <div className="iconOpt">
-                <IoCalendarNumberOutline className="icon" />
+                <CiCalendarDate className="icon" />
                 <h3 className="text">Reservas</h3>
             </div>
             <div className="iconOpt">
-                <RiEBike2Line className="icon" />
+                <CiMap className="icon" />
                 <h3 className="text">Domicilio</h3>
             </div>
             <div className="iconOpt">
-                <FiPhone className="icon" />
+                <CiPhone className="icon" />
                 <h3 className="text">Contacto</h3>
+            </div>
+            <div className="iconOpt menu">
+                <CiMenuBurger className="icon" />
+                <h3 className="text">Menú</h3>
             </div>
 
         </div>

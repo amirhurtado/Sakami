@@ -1,12 +1,11 @@
 import "./header.css";
 
-import { IoSearchOutline, IoCartOutline } from "react-icons/io5";
-import { RiMenuFill } from "react-icons/ri";
+import { CiSearch, CiShoppingCart, CiMenuBurger } from "react-icons/ci";
 import { MainOptions } from "../mainOptions/MainOptions";
 
 export const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="logoContainer">
         <img
           src="src/imgs/logo/logoCompleto-blanco.png"
@@ -16,16 +15,16 @@ export const Header = () => {
         <h2 className="title titleUbi">Osaki</h2>
       </div>
 
-        <MainOptions />
+      <MainOptions />
 
       <div className="otherOpc">
         <h3 className="text">Ingreso</h3>
         <div className="icons">
-          <IoSearchOutline className="icon" />
-          <IoCartOutline className="icon" />
-          <RiMenuFill className="icon" />
+          <CiSearch className="icon" />
+          <CiShoppingCart className="icon" />
+          <CiMenuBurger className="icon menuIcon" />
         </div>
       </div>
-    </div>
+    </header>
   );
 };

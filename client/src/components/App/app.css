@@ -13,12 +13,17 @@ body{
 
 @font-face {
   font-family: 'Eina01';
-  src: url('src/fonts/Eina01-Bold.ttf') format('truetype');
+  src: url('/src/fonts/Eina01-Bold.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'AlergiaWide';
-  src: url('src/fonts/AlergiaWide-Regular.otf') format('truetype');
+  font-family: 'GigaSans';
+  src: url('/src/fonts/GigaSans.otf') format('truetype');
 }
+@font-face {
+  font-family: 'GigaSans-Bold';
+  src: url('/src/fonts/GigaSans-Bold.otf') format('truetype');
+}
+
 
 h1,h2,h3{
   margin: 0;
@@ -29,6 +34,9 @@ h1,h2,h3{
 }
 
 .text{
-  font-family: 'AlergiaWide';
-  font-weight: lighter;
+  font-family: 'GigaSans';
+}
+
+span{
+  font-family: 'GigaSans-Bold';
 }
