@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/src/imgs/banners/banner-0.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 44.5rem;
   margin-top: 5rem;
   padding: 5rem 14rem;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .banner .back {
@@ -64,6 +72,11 @@
   color: var(--blanco);
   width: 4.5rem;
   height: 4.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.banner .arrows .icon:hover {
+  color: var(--azul);
 }
 
 @media screen and (max-width: 1000px) {
@@ -79,6 +92,7 @@
 @media screen and (max-width: 768px) {
   .banner {
     padding: 3rem 2rem;
+    padding-top: 3.5rem;
     height: 23rem;
   }
   .banner .mainInfo .text {

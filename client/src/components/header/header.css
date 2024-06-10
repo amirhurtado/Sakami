@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--verde);
+  background-color: var(--azul);
   padding: 0.5rem 2rem;
   position: fixed;
   width: 100%;
@@ -7,9 +7,15 @@
   justify-content: space-between;
   align-items: center;
   height: 6.5rem;
+  z-index: 1;
+}
+
+.header .noShow {
+  display: none;
 }
 
 .header .logoContainer {
+  display: none;
   display: flex;
   align-items: center;
   gap: 1.1rem;
@@ -26,29 +32,14 @@
   border-left: 0.1rem solid var(--blanco);
 }
 
-.header .otherOpc {
-  display: flex;
-  align-items: center;
-  gap: 2.6rem;
-}
-.header .otherOpc .text {
-  color: var(--blanco);
-  font-size: 1.3rem;
-}
-
-.header .otherOpc .icons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header .otherOpc .icon {
-  color: var(--blanco);
-  width: 2.3rem;
-  height: 2.3rem;
+@media screen and (min-width: 1000px) {
+  .header .noShowOnPc {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+
   .header .logoContainer {
     gap: 0.8rem;
   }
@@ -61,16 +52,15 @@
     padding-left: 1rem;
     font-size: 1.7rem;
   }
+}
 
-  .header .otherOpc {
-    gap: 1rem;
+@media screen and (max-width: 768px) {
+  .header {
+    height: 5.8rem;
   }
 
-  .header .otherOpc .menuIcon {
-    display: none;
+  .header .logoImg {
+    width: 9rem;
   }
 
-  .header .otherOpc .text {
-    font-size: 1.1rem;
-  }
 }

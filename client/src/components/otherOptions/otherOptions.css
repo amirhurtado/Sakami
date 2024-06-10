@@ -1,0 +1,36 @@
+.otherOpc {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+.otherOpc .text {
+  color: var(--blanco);
+  font-size: 1.3rem;
+}
+
+.otherOpc .icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.otherOpc .icon {
+  color: var(--blanco);
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .otherOpc {
+    gap: 1rem;
+  }
+
+  .otherOpc .menuIcon {
+    display: none;
+  }
+
+  .otherOpc .text {
+    font-size: 1.1rem;
+  }
+}

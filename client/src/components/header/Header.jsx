@@ -1,12 +1,20 @@
 import "./header.css";
 
-import { CiSearch, CiShoppingCart, CiMenuBurger } from "react-icons/ci";
+import { useSearch } from "../../context/Search.context";
+
+import { Search } from "../search/Search";
 import { MainOptions } from "../mainOptions/MainOptions";
+import { OtherOptions } from "../otherOptions/OtherOptions";
 
 export const Header = () => {
+  const { searchActive, setSearchActive } = useSearch();
+
   return (
     <header className="header">
-      <div className="logoContainer">
+
+      {searchActive && (<Search setSearchActive={setSearchActive}/>)}
+
+      <div className={searchActive ? "noShow" : "logoContainer"}>
         <img
           src="src/imgs/logo/logoCompleto-blanco.png"
           alt="logo"
@@ -15,15 +23,13 @@ export const Header = () => {
         <h2 className="title titleUbi">Osaki</h2>
       </div>
 
-      <MainOptions />
+      <div className={searchActive ? "noShowOnPc" : ""}>
+       <MainOptions />
+      </div>
+     
 
-      <div className="otherOpc">
-        <h3 className="text">Ingreso</h3>
-        <div className="icons">
-          <CiSearch className="icon" />
-          <CiShoppingCart className="icon" />
-          <CiMenuBurger className="icon menuIcon" />
-        </div>
+      <div className={searchActive ? "noShow" : ""}>
+        <OtherOptions setSearchActive={setSearchActive}/>
       </div>
     </header>
   );

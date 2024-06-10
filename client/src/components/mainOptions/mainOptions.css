@@ -10,13 +10,12 @@
   align-items: center;
   gap: 0.8rem;
 }
-
 .mainOptions .menu {
   display: none;
 }
 
 .mainOptions .icon {
-  color: var(--gris);
+  color: var(--blanco);
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -26,12 +25,26 @@
   font-size: 1.3rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .mainOptions {
+    gap: 2.5rem;
+  }
+
+  .mainOptions .iconOpt {
+    padding: 1.5rem 0.2rem;
+    border-bottom: 0.1rem solid var(--azul);
+    transition: all 0.3s ease-in-out;
+  }
+  .mainOptions .iconOpt:hover {
+    border-bottom: 0.1rem solid var(--blanco);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .mainOptions {
-    background-color: var(--negro);
+    background-color: var(--azul);
     justify-content: space-around;
     padding: 1.5rem 2rem;
-
     position: fixed;
     bottom: 0;
     left: 0;
@@ -54,7 +67,7 @@
   }
 
   .mainOptions .text {
-    color: var(--gris);
+    color: var(--blanco);
     font-size: 1.1rem;
   }
 }
