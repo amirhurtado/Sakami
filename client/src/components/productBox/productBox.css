@@ -1,0 +1,83 @@
+.productBox{
+    display: flex;
+    flex-direction: column;
+    min-width: 25rem;
+    max-width: 25rem;
+    height: auto;
+    gap: 1.6rem;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.productBox .heart{
+    position: absolute;
+    top: 1.3rem;
+    left: 20.8rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--gris);
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.productBox .imgDish{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.productBox .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14rem;
+}
+
+.productBox .titleANDdescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.productBox .info .textBold{
+    font-size: 1.8rem;
+}
+
+.productBox .info .text{
+    font-size: 1.2rem;
+    margin-top: .6rem;
+    color: var(--negro);
+}
+
+.productBox .info .price{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.productBox .add{
+    margin-top: .5rem;
+    text-align: center;
+    border: 0.1rem solid var(--negro);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media screen and  (max-width: 768px){
+    .productBox .info{
+        height: 13rem;
+    }
+    .productBox .info .text{
+        font-size: 1rem;
+    }
+    .productBox .info .textBold{
+        font-size: 1.6rem;
+    }
+    .productBox .add{
+        font-size: 1.4rem;
+    }
+}

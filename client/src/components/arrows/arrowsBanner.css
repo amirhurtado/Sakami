@@ -1,0 +1,23 @@
+.banner .arrows {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.banner .arrows .icon {
+  color: var(--blanco);
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.banner .arrows .icon:hover {
+  color: var(--azul);
+}
+
+
+@media screen and (max-width: 768px) {
+   .banner .arrows {
+    display: none;
+  }
+}

@@ -1,0 +1,353 @@
+{
+    "productos" : 
+        {   
+            "Bonos regalo" : [
+                {
+                    "title" : "Bono de 50.000",
+                    "description" : "Bono de regalo por $50.000",
+                    "price" : "50.000"
+                },
+                {
+                    "title" : "Bono de 100.000",
+                    "description" : "Bono de regalo por $100.000",
+                    "price" : "100.000"
+                },
+                {
+                    "title" : "Bono de 150.000",
+                    "description" : "Bono de regalo por $150.000",
+                    "price" : "150.000"
+                },
+                {
+                    "title" : "Bono de 200.000",
+                    "description" : "Bono de regalo por $200.000",
+                    "price" : "200.000"
+                },
+                {
+                    "title" : "Bono de 250.000",
+                    "description" : "Bono de regalo por $250.000",
+                    "price" : "250.000"
+                },
+                {
+                    "title" : "Bono de 300.000",
+                    "description" : "Bono de regalo por $300.000",
+                    "price" : "300.000"
+                }
+
+            ],
+            "Makis" : [
+                {
+                    "title" : "Philadelphia",
+                    "description" : "Salmón fresco con queso crema y semilla de ajonjolí.",
+                    "price" : "20.800"
+                },
+                {
+                    "title" : "Shiitake Roll",
+                    "description" : "Rollo de hongos salteados, pepino japonés y esparragos envueltos en alga nori. Servido con crema de aguacate e hilos crocantes de camote.",
+                    "price" : "25.200"
+                },
+                {
+                    "title" : "Maji Roll",
+                    "description" : "Cubierto de láminas de pesca del día y salmón, relleno de ensalada de kanikama, aguacate y esparragos. Acompañado de ponzu especial.",
+                    "price" : "34.100"
+                },
+                {
+                    "title" : "Nori Crocante",
+                    "description" : "Rollo crocante relleno de langostino al vapor y aguacate, coronado con tartar de salmón en salsa cítrica de ají amarillo trufada.",
+                    "price" : "42.200"
+                },
+                {
+                    "title" : "Spicy Maki",
+                    "description" : "Tartar de pesca al día y langostino furay con salsa dinamita, crispy chile y aguacate.",
+                    "price" : "36.500"
+                },
+                {
+                    "title" : "Vegan Roll",
+                    "description" : "Relleno de aguacate, tofu braseado, mix de encurtidos, pepino japonés y tomates deshidratados. Envuelto en quinua crocante y togarashi.",
+                    "price" : "23.400"
+                },
+                {
+                    "title" : "California",
+                    "description" : "Palmito de cangrejo, aguacate, pepino y masago.",
+                    "price" : "16.200"
+                },
+                {
+                    "title" : "Crunchy",
+                    "description" : "Anguila y palmito bañados con salsa de soya y miel. Envuelto en zanahoria frita.",
+                    "price" : "24.600"
+                },
+                {
+                    "title" : "Smoked Crab Roll",
+                    "description" : "Relleno de cangrejo ahumado, cebolla tempura y aguacate cubierto con ajonjolí y esparragos. Acompañado de salsa bang bang.",
+                    "price" : "35.000"
+                }
+
+            ],
+            "Pokes" : [
+
+                {
+                    "title" : "Poke Salmón Marinado",
+                    "description" : "Salmón marinado en soya y aceite de ajonjolí. Con aguacate, ensalada de algas y furikake. Servido sobre arroz de sushi.",
+                    "price" : "48.800"
+                },
+                {
+                    "title" : "Poke Salmón",
+                    "description" : "Tataki de salmón servido sobre guacamole fresco con jalapeño, cebolla, cilantro y limón. Servido con tempura de kale.",
+                    "price" : "46.600"
+                },
+                {
+                    "title" : "Poke Citrus Salmón",
+                    "description" : "Trozos de salmón fresco, aguacate, edamame, cebolla y cilantro. Bañados en salsa soya, jalapeño y limón, servido sobre arroz de sushi.",
+                    "price" : "46.600"
+                },
+                {
+                    "title" : "Poke Citrus Atún",
+                    "description" : "Trozos de atún, aguacate, edamame, cebolla y cilantro. Bañados en salsa soya, jalapeño y limón, servido sobre arroz de sushi.",
+                    "price" : "46.600"
+                },
+                {
+                    "title" : "Poke Camarones Tempura",
+                    "description" : "Camarones en mayonesa de chipotle, con ensalada de algas, aguacate y furikake. Servidos sobre arroz de sushi.",
+                    "price" : "45.600"
+                }
+
+            ],
+            "Especiales" : [
+                {
+                    "title" : "Bento Box",
+                    "description" : "½ Edamame, 2 Langostinos Furai, ½ Philadelphia y ½ Ceviche Roll.",
+                    "price" : "55.000"
+                },
+                {
+                    "title" : "Especial 36",
+                    "description" : "½ Ceviche Roll, ½ Philadelphia y ½California Dinamita. (15 piezas).",
+                    "price" : "49.500"
+                },
+                {
+                    "title" : "Especial 37",
+                    "description" : "½ Crunchy, 1/2 California Dinamita y 1/2 Philadelphia. (15 piezas).",
+                    "price" : "49.500"
+                },
+                {
+                    "title" : "Especial 38",
+                    "description" : "½ Philadelphia, ½Spicy Maki y ½ Smoked Crab Roll. (15 piezas).",
+                    "price" : "63.300"
+                }
+            ],
+            "Crudos" : [
+                {
+                    "title" : "Sashimi Ebi",
+                    "description" : "Langostino rojo cocido, sobre ensalada de vegetales y algas marinas.",
+                    "price" : "20.800"
+                },
+                {
+                    "title" : "Sashimi Salmón",
+                    "description" : "Salmón fresco sobre ensalada de vegetales y algas marinas. Servido con soya.",
+                    "price" : "24.600"
+                },
+                {
+                    "title" : "Tataki Salmón",
+                    "description" : "Salmón marinado en costra de togarashi y sellado a alta temperatura. Cortado estilo sashimi bañado con salsa ponzu.",
+                    "price" : "63.300"
+                }
+            ],
+            "Bocados" : [
+                {
+                    "title" : "Crab Roll",
+                    "description" : "Maki relleno con kanikama o kanikama y langostino, envuelto en piel de soya y servido con salsa ponzu (4 bocados).",
+                    "price" : "30.800"
+                }
+            ],
+            "Nigiris" : [
+                {
+                    "title" : "Sake",
+                    "description" : "Lonjas de salmón fresco sobre arroz de sushi.",
+                    "price" : "19.400"
+                },
+                {
+                    "title" : "Ebi",
+                    "description" : "Langostino rojo del atlántico hervido servido sobre arroz de sushi.",
+                    "price" : "18.300"
+                }
+            ],
+            "Entradas" : [
+                {
+                    "title" : "Rollitos Primavera",
+                    "description" : "Egg Rolls rellenos de vegetales frescos y albahaca. Servidos en hojas de lechuga lisa y hierbabuena. Acompañados con salsa de chile dulce (2 unidades)",
+                    "price" : "20.700"
+                },
+                {
+                    "title" : "Edamame",
+                    "description" : "Frijoles de soya en su vaina, cocidos al vapor. Servidos con sal marina y ajonjolí.",
+                    "price" : "14.500"
+                },
+                {
+                    "title" : "Rollos Siam",
+                    "description" : "Rellenos de pollo, vegetales y albahaca siam, servidos con salsa hot and sour. (5 unidades).",
+                    "price" : "20.700"
+                },
+                {
+                    "title" : "Rollos de Langostino Crujientes",
+                    "description" : "Rollos con langostinos envueltos en piel de Spring roll, con salsa de pimienta y limón. (5 unidades).",
+                    "price" : "36.200"
+                },
+                {
+                    "title" : "Ensalada de Algas",
+                    "description" : "Mezcla de algas marinas, marinadas con ponzu y ajonjolí. Servida con mango biche.",
+                    "price" : "21.500"
+                },
+                {
+                    "title" : "Hummus de Edamame",
+                    "description" : "Con mango, marañon y chips de camote.",
+                    "price" : "32.000"
+                },
+                {
+                    "title" : "Gyozas Kaimu",
+                    "description" : "Empanadas Orientales rellenas de pollo y tocineta ,Servidas con salsa de soya,jengibre y ajonjolí.",
+                    "price" : "25.700"
+                },
+                {
+                    "title" : "Rollos de Verano",
+                    "description" : "Elija entre, vegetales frescos, palmito o langostinos envueltos en hojas de papel de arroz con jalapeños. Servidos con salsa de soya y limón (2 unidades).",
+                    "price" : "17.700"
+                },
+                {
+                    "title" : "Gyozas de Pollo",
+                    "description" : "Empanadas Orientales rellenas de pollo ,Servidas con salsa de soya,jengibre y ajonjolí.",
+                    "price" : "25.700"
+                },
+                {
+                    "title" : "Crispy Wonton",
+                    "description" : "Dumpling crujiente relleno de cerdo especies y cebolla china, servida con chile dulce cítrico.",
+                    "price" : "22.000"
+                }
+            ],
+            "Del Wok" : [
+                {
+                    "title" : "Pollo Kung Pao",
+                    "description" : "Pollo crujiente con marañones, chiles secos y cebolla caramelizada. Acompañado de arroz al vapor.",
+                    "price" : "40.100"
+                },
+                {
+                    "title" : "Lomo Saltado",
+                    "description" : "Lomo de res salteados al wok, con cebolla roja, tomate fresco, maíz tierno, cilantro, papa frita, limón y ajonjolí. Con huevo y una porción de arroz.",
+                    "price" : "47.300"
+                },
+                {
+                    "title" : "Pad Thai",
+                    "description" : "Fideos frescos servidos en caldo a base de miso aromatizado con cebolla japonesa, raíz china, shitake y ajonjolí.",
+                    "price" : "34.300"
+                },
+                {
+                    "title" : "Arroz Biriani",
+                    "description" : "Con pollo o vegetariano, almendras, cebolla, plátano frito y mango tommy, mezclados con arroz aromatizado al wok. Servido con chutney de mango.",
+                    "price" : "31.200"
+                },
+                {
+                    "title" : "Khao Pad",
+                    "description" : "Cerdo o pollo en pequeños trozos salteados al wok con jengibre . Servido sobre arroz jazmín crujiente, huevo pochado y encurtido de cohombro.",
+                    "price" : "34.600"
+                }
+            ],
+
+            "Sopas" : [
+                {
+                    "title" : "Ramen Noodles",
+                    "description" : "Fideos frescos servidos en caldo a base de miso aromatizado con cebolla japonesa, raíz china, shiitake y ajonjolí",
+                    "price" : "37.800"
+                },
+                {
+                    "title" : "Wonton",
+                    "description" : "Consomé con champiñones shiitake, bok choy y aceite de ajonjolí. Servido con wontons de cerdo.",
+                    "price" : "31.300"
+                },
+                {
+                    "title" : "Sopa Miso",
+                    "description" : "Consomé a base de pasta de frijol de soya (miso) mezclado con algas marinas, cebolla primavera, ajonjolí y tofu fresco.",
+                    "price" : "15.200"
+                },
+                {
+                    "title" : "Ahuyama y Leche de Coco",
+                    "description" : "Consomé de vegetales aromatizado con galanga y hojas de limón kaffir, leche de coco y ahuyama. Con tofu fresco, tomates cherry y chips de wonton.",
+                    "price" : "24.600"
+                }
+
+            ],
+
+            
+            "Ensaladas" : [
+                {
+                    "title" : "Quinua y Edamame",
+                    "description" : "Fresca mezclade quinua cocida servida con edamame, mango, tomate cherry, aguacate y marañón.",
+                    "price" : "38.700"
+                },
+                {
+                    "title" : "Lomo Thai",
+                    "description" : "Medallones de res marinado y asado a la parrilla, servido sobre una mezcla de lechugas, hierbabuena, tomates, cebolla ocañera y cohombro.",
+                    "price" : "39.700"
+                },
+                {
+                    "title" : "Mariscos y Maní",
+                    "description" : "Ensalada de camarones y calamares con lechugas asiáticas, tomate cherry, hierbas frescas, cebolla crujiente y salsa de maní.",
+                    "price" : "43.900"
+                },
+                {
+                    "title" : "Pollo Inasal",
+                    "description" : "Pollo inasal, con mix de lechugas asiáticas, papaya encurtida, tomate cherry, pepino europeo, hierbas aromáticas y brotes de soya.",
+                    "price" : "35.700"
+                }
+            ],
+            "Curries" : [
+                {
+                    "title" : "Curry Rojo",
+                    "description" : "Pollo, lomo de res o calamares y camarón hervidos en leche de coco y curry rojo con vegetales frescos, albahaca, limón y nampla.",
+                    "price" : "44.500"
+                },
+                {
+                    "title" : "Curry Amarillo",
+                    "description" : "Pollo, lomo de res o calamares y camarón hervidos en leche de coco y curry amarillo con vegetales, albahaca, limón y nampla.",
+                    "price" : "41.500"
+                }
+            ],
+            "De la parrilla" : [
+                {
+                    "title" : "Costillas Caramelo Miso",
+                    "description" : "Costillas de cerdo marinadas en especias cocidas al horno bañadas en caramelo de miso. Acompañadas de vegetales o cantones vegetariano.",
+                    "price" : "53.100"
+                },
+                {
+                    "title" : "Pescado a la Parrilla",
+                    "description" : "Salmón o pesca del día, asado a la parrilla sobre ensalada de mango, lechugas asiáticas, hierbas, marañones y tomate, con una infusión de nampla.",
+                    "price" : "51.300"
+                }
+            ],
+            "Postres" : [
+                {
+                    "title" : "Cheesecake de Maracuyá",
+                    "description" : "Cheesecakede queso sobre galleta y maracuya.",
+                    "price" : "18.700"
+                },
+                {
+                    "title" : "Banana Tempura",
+                    "description" : "Bananos maduros fritos en masa tempura servidos con helado de vainilla y salsa de mora.",
+                    "price" : "20.700"
+                },
+                {
+                    "title" : "Wonton Rellenos con Arequipe",
+                    "description" : "Bolsitas de piel de wonton rellenas de queso ricota y arequipe servidas con helado de vainilla y salsa de mora.",
+                    "price" : "22.800"
+                },
+                {
+                    "title" : "Torta Opera",
+                    "description" : "Torta suave de chocolate artesanal, con base crujiente rellena con mousse de pistacho y servida con coulis de durazno.",
+                    "price" : "20.900"
+                },
+                {
+                    "title" : "Pie de Coco",
+                    "description" : "Galleta suave horneada, rellena de crema y coco deshidratado, servido con helado de vainilla.",
+                    "price" : "20.800"
+                }
+            ]
+        }
+
+
+}

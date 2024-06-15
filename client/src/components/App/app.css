@@ -20,8 +20,8 @@ body{
   src: url('/src/fonts/GigaSans.otf') format('truetype');
 }
 @font-face {
-  font-family: 'GigaSans-Bold';
-  src: url('/src/fonts/GigaSans-Bold.otf') format('truetype');
+  font-family: 'GigaSans-Medium';
+  src: url('/src/fonts/GigaSans-Medium.otf') format('truetype');
 }
 
 
@@ -37,6 +37,6 @@ h1,h2,h3{
   font-family: 'GigaSans';
 }
 
-span{
-  font-family: 'GigaSans-Bold';
+span, .textBold{
+  font-family: 'GigaSans-Medium';
 }

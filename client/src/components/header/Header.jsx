@@ -1,35 +1,39 @@
 import "./header.css";
 
-import { useSearch } from "../../context/Search.context";
+import { useOptions } from "../../context/Options.context";
 
-import { Search } from "../search/Search";
-import { MainOptions } from "../mainOptions/MainOptions";
-import { OtherOptions } from "../otherOptions/OtherOptions";
+import { Search, MainOptions, OtherOptions } from "../";
 
-export const Header = () => {
-  const { searchActive, setSearchActive } = useSearch();
+export const Header = ({ hasScrolled }) => {
+  const { searchActive, setSearchActive } = useOptions();
 
   return (
     <header className="header">
-
-      {searchActive && (<Search setSearchActive={setSearchActive}/>)}
+      {searchActive && <Search setSearchActive={setSearchActive} />}
 
       <div className={searchActive ? "noShow" : "logoContainer"}>
         <img
-          src="src/imgs/logo/logoCompleto-blanco.png"
+          src={`src/imgs/logo/${
+            hasScrolled ? "logo" : "logoCompleto"
+          }-blanco.png`}
           alt="logo"
           className="logoImg"
         />
-        <h2 className="title titleUbi">Osaki</h2>
+        <h2
+          className={
+            hasScrolled ? "title titleUbi animatedToLeft" : "title titleUbi"
+          }
+        >
+          Osaki
+        </h2>
       </div>
 
       <div className={searchActive ? "noShowOnPc" : ""}>
-       <MainOptions />
+        <MainOptions />
       </div>
-     
 
       <div className={searchActive ? "noShow" : ""}>
-        <OtherOptions setSearchActive={setSearchActive}/>
+        <OtherOptions setSearchActive={setSearchActive} />
       </div>
     </header>
   );
