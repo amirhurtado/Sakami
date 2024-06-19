@@ -14,10 +14,10 @@ export const useOptions = () => {
 
 export const OptionsProvider = ({ children }) => {
     const [searchActive, setSearchActive] = useState(false);
-    const [drowDownMenuActive, setDrowDownMenuActive] = useState(false);
+    const [dropDownMenuActive, setDropDownMenuActive] = useState(false);
 
     return (
-        <OptionsContext.Provider value={{searchActive, setSearchActive, drowDownMenuActive, setDrowDownMenuActive  }}>
+        <OptionsContext.Provider value={{searchActive, setSearchActive, dropDownMenuActive, setDropDownMenuActive  }}>
             {children}
         </OptionsContext.Provider>
     )

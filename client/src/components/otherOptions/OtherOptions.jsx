@@ -1,8 +1,13 @@
 import "./otherOptions.css";
 
 import { CiSearch, CiShoppingCart, CiMenuBurger } from "react-icons/ci";
+import { TfiClose } from "react-icons/tfi";
 
-export const OtherOptions = ({setSearchActive}) => {
+export const OtherOptions = ({
+  setSearchActive,
+  dropDownMenuActive,
+  setDropDownMenuActive,
+}) => {
   return (
     <div className="otherOpc">
       <h3 className="text">Ingreso</h3>
@@ -12,7 +17,20 @@ export const OtherOptions = ({setSearchActive}) => {
           onClick={() => setSearchActive((prev) => !prev)}
         />
         <CiShoppingCart className="icon" />
-        <CiMenuBurger className="icon menuIcon" />
+
+        {dropDownMenuActive ? (
+          <TfiClose
+            key={dropDownMenuActive}
+            className="icon animationClose"
+            onClick={() => setDropDownMenuActive((prev) => !prev)}
+          />
+        ) : (
+          <CiMenuBurger
+          key={dropDownMenuActive}
+            className="icon menuIcon animationMenu"
+            onClick={() => setDropDownMenuActive((prev) => !prev)}
+          />
+        )}
       </div>
     </div>
   );

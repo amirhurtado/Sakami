@@ -21,12 +21,43 @@
   cursor: pointer;
 }
 
+.otherOpc .animationClose{
+  animation: upMenu 0.2s ease-out forwards;
+}
+
+@keyframes upMenu {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+  
+}
+
+
+.otherOpc .animationMenu{
+  animation: downMenu 0.2s ease-out forwards;
+}
+
+@keyframes downMenu {
+  from {
+    transform: translateY(-1rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+  
+}
+
+
 @media screen and (max-width: 1000px) {
   .otherOpc {
     gap: 1rem;
   }
 
-  .otherOpc .menuIcon {
+  .otherOpc .animationClose,
+  .otherOpc .animationMenu{
     display: none;
   }
 

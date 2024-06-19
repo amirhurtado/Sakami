@@ -1,5 +1,21 @@
 .home{
     display: flex;
     flex-direction: column;
-    
+}
+
+.noScroll{
+    max-height: 100vh;
+    overflow: hidden;
+    animation: delayNoScroll 0.9s ease-out forwards;
+}
+
+@keyframes delayNoScroll {
+    0% {
+        overflow: visible;
+        max-height: none;
+    }
+    100% {
+        overflow: hidden;
+        max-height: 100vh;
+    }
 }

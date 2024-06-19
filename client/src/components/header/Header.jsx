@@ -5,7 +5,7 @@ import { useOptions } from "../../context/Options.context";
 import { Search, MainOptions, OtherOptions } from "../";
 
 export const Header = ({ hasScrolled }) => {
-  const { searchActive, setSearchActive } = useOptions();
+  const { searchActive, setSearchActive, dropDownMenuActive, setDropDownMenuActive } = useOptions();
 
   return (
     <header className="header">
@@ -29,11 +29,11 @@ export const Header = ({ hasScrolled }) => {
       </div>
 
       <div className={searchActive ? "noShowOnPc" : ""}>
-        <MainOptions />
+        <MainOptions dropDownMenuActive={dropDownMenuActive} setDropDownMenuActive={setDropDownMenuActive} />
       </div>
 
       <div className={searchActive ? "noShow" : ""}>
-        <OtherOptions setSearchActive={setSearchActive} />
+        <OtherOptions setSearchActive={setSearchActive} dropDownMenuActive={dropDownMenuActive} setDropDownMenuActive={setDropDownMenuActive} />
       </div>
     </header>
   );

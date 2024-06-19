@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.6rem;
 }
 
 .mainOptions .iconOpt {
@@ -40,8 +39,25 @@
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .hide-MO {
+    animation: hideMOPC 0.3s ease-out forwards;
+  }
+  @keyframes hideMOPC {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .mainOptions {
+    height: 6.5rem;
+    gap: 2.6rem;
     background-color: var(--azul);
     justify-content: space-around;
     padding: 1.5rem 2rem;
@@ -50,6 +66,10 @@
     left: 0;
     width: 100%;
     z-index: 1;
+  }
+  .align-right{
+    justify-content: flex-end;
+  
   }
 
   .mainOptions .iconOpt {
@@ -65,6 +85,19 @@
     width: 1.8rem;
     height: 1.8rem;
   }
+
+  .mainOptions .animationMO-CEL{
+    animation: animationMO-CEL 0.3s ease-out forwards;
+  }
+
+  @keyframes animationMO-CEL {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  } 
 
   .mainOptions .text {
     color: var(--blanco);
