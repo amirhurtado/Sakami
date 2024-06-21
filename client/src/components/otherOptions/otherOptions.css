@@ -14,6 +14,23 @@
   gap: 1rem;
 }
 
+.otherOpc .cartContainer {
+  position: relative;
+}
+
+.otherOpc .cartContainer .cartCounter{
+  font-size: .8rem;
+  position: absolute;
+  left: 1.3rem;
+  top: 0;
+  background-color: var(--rojo);
+  width: 1.2rem; /* Ajustar ancho */
+  height: 1.2rem; /* Ajustar alto */
+  text-align: center;
+  line-height: 1.5rem; /* Igual al alto para centrar verticalmente */
+  color: var(--blanco);
+  border-radius: 50%;
+}
 .otherOpc .icon {
   color: var(--blanco);
   width: 2.3rem;

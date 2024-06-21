@@ -1,0 +1,21 @@
+.addButton{
+    margin-top: .5rem;
+    text-align: center;
+    border: 0.1rem solid var(--negro);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    width: 100%;
+}
+.addButton:active{
+    transform: scale(0.9);
+    background-color: var(--grisClaro);
+}
+
+@media screen and  (max-width: 768px){
+     .addButton{
+        font-size: 1.4rem;
+    }
+}

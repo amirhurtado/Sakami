@@ -61,6 +61,7 @@
     background-color: var(--azul);
     justify-content: space-around;
     padding: 1.5rem 2rem;
+    padding-bottom: 1.8rem;
     position: fixed;
     bottom: 0;
     left: 0;

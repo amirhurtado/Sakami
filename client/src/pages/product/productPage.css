@@ -1,0 +1,78 @@
+.productPage{
+    display: flex;
+    flex-direction: column;
+}
+
+.productPageContainer{
+    margin-top: 11rem;
+    padding: 5rem 14rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.productPageContainer .productContainer{
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+
+ .productContainer .img-heart{
+    position: relative;
+    width: 58%;
+    height: 100%;
+}
+
+.productPageContainer .productContainer .img{
+    width: 100%;
+    object-fit: cover;
+    height: 38rem;
+}
+
+.productPageContainer .productContainer .heart{
+    position: absolute;
+    top: 1.8rem;
+    right: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--gris);
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.productPageContainer .productContainer .productInfo{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productContainer .productInfo .title{
+    font-size: 2.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.productContainer .productInfo .text{
+    color: var(--negro);
+    margin-bottom: 2rem;
+}
+
+.productContainer .productInfo .textBold{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .productPageContainer {
+      padding: 5rem 2.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productPageContainer {
+    margin-top: 5.5rem;
+      padding: 3rem 2rem;
+    }
+}

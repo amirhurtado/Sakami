@@ -1,24 +1,46 @@
 import "./header.css";
 
-import { useOptions } from "../../context/Options.context";
+import { useEffect, useState } from "react";
+
+import { useOptions, useCart } from "../../context";
+
+import { HandleScroll } from "../../functions/HandleScroll";
 
 import { Search, MainOptions, OtherOptions } from "../";
 
-export const Header = ({ hasScrolled }) => {
-  const { searchActive, setSearchActive, dropDownMenuActive, setDropDownMenuActive } = useOptions();
+import { NavLink } from "react-router-dom";
+
+export const Header = () => {
+  const [hasScrolled, setHasScrolled] = useState(false);
+  const { cart } = useCart();
+  const {
+    searchActive,
+    setSearchActive,
+    dropDownMenuActive,
+    setDropDownMenuActive,
+  } = useOptions();
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => HandleScroll(setHasScrolled));
+    return () => {
+      window.removeEventListener("scroll", () => HandleScroll(setHasScrolled));
+    };
+  }, [setHasScrolled]);
 
   return (
     <header className="header">
       {searchActive && <Search setSearchActive={setSearchActive} />}
 
       <div className={searchActive ? "noShow" : "logoContainer"}>
-        <img
-          src={`src/imgs/logo/${
-            hasScrolled ? "logo" : "logoCompleto"
-          }-blanco.png`}
-          alt="logo"
-          className="logoImg"
-        />
+        <NavLink to="/">
+          <img
+            src={`/src/imgs/logo/${
+              hasScrolled ? "logo" : "logoCompleto"
+            }-blanco.png`}
+            alt="logo"
+            className="logoImg"
+          />
+        </NavLink>
         <h2
           className={
             hasScrolled ? "title titleUbi animatedToLeft" : "title titleUbi"
@@ -29,11 +51,19 @@ export const Header = ({ hasScrolled }) => {
       </div>
 
       <div className={searchActive ? "noShowOnPc" : ""}>
-        <MainOptions dropDownMenuActive={dropDownMenuActive} setDropDownMenuActive={setDropDownMenuActive} />
+        <MainOptions
+          dropDownMenuActive={dropDownMenuActive}
+          setDropDownMenuActive={setDropDownMenuActive}
+        />
       </div>
 
       <div className={searchActive ? "noShow" : ""}>
-        <OtherOptions setSearchActive={setSearchActive} dropDownMenuActive={dropDownMenuActive} setDropDownMenuActive={setDropDownMenuActive} />
+        <OtherOptions
+          setSearchActive={setSearchActive}
+          dropDownMenuActive={dropDownMenuActive}
+          setDropDownMenuActive={setDropDownMenuActive}
+          cart={cart}
+        />
       </div>
     </header>
   );

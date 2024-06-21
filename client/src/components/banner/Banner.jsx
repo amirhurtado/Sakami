@@ -2,11 +2,10 @@ import "./banner.css";
 
 import { useState, useEffect } from "react";
 
-import { Arrows, Points } from "../";
+import { Arrows, Points, IconBackText } from "../";
 
 import { ChangeImgAuto } from "../../functions/ChangeImg";
 
-import { TfiArrowLeft } from "react-icons/tfi";
 
 export const Banner = () => {
   const [img, setImg] = useState(0);
@@ -24,10 +23,7 @@ export const Banner = () => {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/imgs/banners/banner-${img}.jpg)`,
       }}
     >
-      <div className="back">
-        <TfiArrowLeft className="icon" />
-        <h3 className="text">Inicio</h3>
-      </div>
+      <IconBackText color="W"  text="Inicio" />
       <div className="mainInfo-arrows">
         <div className="mainInfo">
           <h1 className="title">Menú Osaki</h1>

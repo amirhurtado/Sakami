@@ -42,7 +42,7 @@
                 },
                 {
                     "title" : "Shiitake Roll",
-                    "description" : "Rollo de hongos salteados, pepino japonés y esparragos envueltos en alga nori. Servido con crema de aguacate e hilos crocantes de camote.",
+                    "description" : "Rollo de hongos salteados, pepino japonés y esparragos envueltos en alga nori. Con crema de aguacate e hilos crocantes de camote.",
                     "price" : "25.200"
                 },
                 {
@@ -96,7 +96,7 @@
                 },
                 {
                     "title" : "Poke Citrus Salmón",
-                    "description" : "Trozos de salmón fresco, aguacate, edamame, cebolla y cilantro. Bañados en salsa soya, jalapeño y limón, servido sobre arroz de sushi.",
+                    "description" : "Trozos de salmón fresco, aguacate, edamame, cebolla y cilantro. Con en salsa soya, jalapeño y limón, servido sobre arroz de sushi.",
                     "price" : "46.600"
                 },
                 {
@@ -172,7 +172,7 @@
             "Entradas" : [
                 {
                     "title" : "Rollitos Primavera",
-                    "description" : "Egg Rolls rellenos de vegetales frescos y albahaca. Servidos en hojas de lechuga lisa y hierbabuena. Acompañados con salsa de chile dulce (2 unidades)",
+                    "description" : "Egg Rolls rellenos de vegetales frescos y albahaca. Servidos en hojas de lechuga lisa y hierbabuena. Acompañados con salsa de chile (2 unidades)",
                     "price" : "20.700"
                 },
                 {

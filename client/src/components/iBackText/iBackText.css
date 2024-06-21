@@ -1,0 +1,33 @@
+ .iBackText {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+ .iBackText .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .iBackText .W{
+    color: var(--blanco);
+  }
+
+  .iBackText .B{
+    color: var(--negro)
+  }
+  
+ .iBackText .text {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .iBackText .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    } 
+  
+    .iBackText .text {
+      font-size: 1.1rem;
+    }
+  }

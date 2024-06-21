@@ -20,23 +20,6 @@
   }
 }
 
-.banner .back {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.banner .back .icon {
-  color: var(--blanco);
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
-.banner .back .text {
-  color: var(--blanco);
-  font-size: 1.3rem;
-}
-
 .banner .mainInfo-arrows {
   display: flex;
   justify-content: space-between;

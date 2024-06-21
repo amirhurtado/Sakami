@@ -41,7 +41,7 @@
         justify-content: center;
         gap: 2.5rem;
         align-items: flex-start;
-        margin-top:  0;
+        margin-top:  -1.5rem;
         padding: 0 2rem;
     }
     .dropDownMenu .column{
@@ -52,5 +52,11 @@
     }
     .dropDownMenu .column .text{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .dropDownMenu{
+        margin-top: -2.9rem;
     }
 }
