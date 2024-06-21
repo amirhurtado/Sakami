@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { useProducts } from "../../context";
 
-import { Header, IconBackText, AddProduct } from "../../components";
+import { Header, IconBackText, AddProduct, Footer } from "../../components";
 
 import { CiHeart } from "react-icons/ci";
 
@@ -39,6 +39,7 @@ export const ProductPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
