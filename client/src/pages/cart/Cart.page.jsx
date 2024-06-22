@@ -9,7 +9,7 @@ import { HiPlus, HiMinus } from "react-icons/hi2";
 
 export const CartPage = () => {
   const { dropDownMenuActive } = useOptions();
-  const { cart } = useCart();
+  const { cart, setCart } = useCart();
 
   return (
     <div className="cart">
@@ -22,8 +22,8 @@ export const CartPage = () => {
           <h2 className="text">No hay productos en el carrito</h2>
         ) : (
           <div className="products">
-            {cart.map(([category, product]) => (
-              <div className="product">
+            {cart.map(([category, product], index) => (
+              <div className="product" key={product.title}>
                 <div className="imgInfoContainer">
                   <img
                     src={`src/imgs/platos/${category}/${product.title}.jpg`}
@@ -45,7 +45,12 @@ export const CartPage = () => {
                     <h2 className="text">1</h2>
                     <HiPlus className="icon" />
                   </div>
-                  <CiPillsBottle1 className="iconDelete" />
+                  <CiPillsBottle1
+                    className="iconDelete"
+                    onClick={() => {
+                      setCart(cart.filter((_, idx) => idx !== index));
+                    }}
+                  />
                 </div>
               </div>
             ))}
