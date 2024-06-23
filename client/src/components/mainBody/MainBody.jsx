@@ -1,9 +1,7 @@
-import { ProductBox } from "../";
+import { ProductBox } from "..";
 import "./mainBody.css";
 
 export const MainBody = ({ products }) => {
-
-  console.log(products);
   return (
     <div className="mainBody">
         {Object.entries(products).map(([category, products]) => (

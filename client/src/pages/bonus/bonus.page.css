@@ -1,0 +1,16 @@
+.contenedorBodyBonusPage{
+    padding: 13rem 14rem 0 14rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedorBodyBonusPage {
+      padding: 9rem 2.8rem 0 2.8rem;
+    }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contenedorBodyBonusPage {
+      padding: 3rem 0 3rem 2rem;
+    }
+  }
