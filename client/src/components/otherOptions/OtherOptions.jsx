@@ -5,12 +5,11 @@ import { NavLink } from "react-router-dom";
 import { CiSearch, CiShoppingCart, CiMenuBurger } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 
-
 export const OtherOptions = ({
   setSearchActive,
   dropDownMenuActive,
   setDropDownMenuActive,
-  cart
+  cart,
 }) => {
   return (
     <div className="otherOpc">
@@ -21,9 +20,10 @@ export const OtherOptions = ({
           onClick={() => setSearchActive((prev) => !prev)}
         />
         <NavLink to="/carrito" className="cartContainer">
-        <CiShoppingCart className="icon" />
-        {cart.length > 0 && <span className="cartCounter text">{cart.length}</span>}
-        
+          <CiShoppingCart className="icon" />
+          {cart.length > 0 && (
+            <span className="cartCounter text">{cart.length}</span>
+          )}
         </NavLink>
 
         {dropDownMenuActive ? (
@@ -34,7 +34,7 @@ export const OtherOptions = ({
           />
         ) : (
           <CiMenuBurger
-          key={dropDownMenuActive}
+            key={dropDownMenuActive}
             className="icon menuIcon animationMenu"
             onClick={() => setDropDownMenuActive((prev) => !prev)}
           />

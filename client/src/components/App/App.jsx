@@ -1,6 +1,6 @@
 import { ProductsProvider, OptionsProvider, CartProvider } from "../../context";
 
-import { HomePage, CartPage, ProductPage } from "../../pages"
+import { HomePage, CartPage, ProductPage, BonusPage } from "../../pages"
 
 import "./app.css";
 
@@ -17,6 +17,7 @@ export function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/carrito" element={<CartPage />} />
             <Route path="/:categoryName/:productName" element={<ProductPage />} />
+            <Route path="/bonos" element={<BonusPage />} />
           </Routes>
         </BrowserRouter>
       </OptionsProvider>

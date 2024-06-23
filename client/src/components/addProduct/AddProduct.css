@@ -9,6 +9,11 @@
     transition: all 0.3s ease-out;
     width: 100%;
 }
+
+.addButton:hover{
+    background-color: var(--grisClaro);
+}
+
 .addButton:active{
     transform: scale(0.9);
     background-color: var(--grisClaro);

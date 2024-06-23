@@ -1,5 +1,7 @@
 import "./mainOptions.css";
 
+import { NavLink } from "react-router-dom";
+
 import {
   CiCreditCard2,
   CiCalendarDate,
@@ -16,10 +18,10 @@ export const MainOptions = ({ dropDownMenuActive, setDropDownMenuActive }) => {
       {dropDownMenuActive ? (
         null
       ) : <>
-      <div className="iconOpt">
+      <NavLink className="iconOpt" to="/bonos">
         <CiCreditCard2 className="icon" />
         <h3 className="text">Bonos</h3>
-      </div>
+      </NavLink>
       <div className="iconOpt">
         <CiCalendarDate className="icon" />
         <h3 className="text">Reservas</h3>
